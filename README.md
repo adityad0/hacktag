@@ -14,3 +14,4 @@ Components:
 7. Li-ion Battery (3.7v) (Optional)
 8. LD33V linear voltage regulator (or another compatible type)
 9. Li-ion charge module
+10. SSD1306 (I2C) OLED Display (Optional) or another compatible type
