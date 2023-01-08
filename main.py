@@ -7,7 +7,6 @@ https://github.com/micropython/micropython/blob/master/drivers/display/ssd1306.p
 from machine import I2C, Pin, UART
 from time import sleep
 from ssd1306 import SSD1306_I2C
-from uQR import QRCode
 import utime
 
 uart1 = UART(1, 9600)
