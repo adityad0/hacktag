@@ -1,0 +1,30 @@
+# Micropython program for ESP, SEEED microcontrollers.
+"""
+ssd1306 library
+https://github.com/micropython/micropython/blob/master/drivers/display/ssd1306.py
+"""
+
+from machine import I2C, Pin, UART
+from time import sleep
+from ssd1306 import SSD1306_I2C
+from uQR import QRCode
+import utime
+
+uart1 = UART(1, 9600)
+
+LED_INBUILT = Pin(25, Pin.OUT)
+LED_RGB_R = Pin(22, Pin.OUT)
+LED_RGB_G = Pin(21, Pin.OUT)
+LED_RGB_B = Pin(20, Pin.OUT)
+
+i2c0 = I2C(0, sda = Pin(0), scl = Pin(1), freq = 40000)
+def get_i2c_devices(i2c0 = i2c0):
+    print(i2c0)
+    print("Available i2c devices: " + str(i2c0.scan()))
+
+WIDTH = 128
+HEIGHT = 64
+
+oled = SSD1306_I2C(WIDTH, HEIGHT, i2c0)
+
+oled.fill(0)
