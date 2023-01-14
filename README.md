@@ -1,7 +1,7 @@
 # hacktag
 A home made GPS tracker with live tracking using GSM, BLE and Wi-Fi
 
-Components:
+##Components:
 1. GPS Module - NEO 6M GPS Module from u-blox or another compatible type
 2. Microcontroller - Arduino, SEEED XIAO, ESP32, RP2040 or another compatible type
 3. GSM Module - SIM800L or another compatible type (Note: SIM800L supports only 2G networks)
