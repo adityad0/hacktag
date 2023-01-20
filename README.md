@@ -22,7 +22,7 @@ HackTag © 2023 by Aditya Desai is licensed under Attribution-ShareAlike 4.0 Int
 
 Full License: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-[![License](https://img.shields.io/github/license/adityad0/hacktag?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
-[![Release](https://img.shields.io/static/v1?label=Release&message=1.0.0%20Beta&color=informational)](https://github.com/adityad0/hacktag/releases)
-[![Issues](https://img.shields.io/github/issues/adityad0/hacktag?style=flat-square)](https://github.com/adityad0/hacktag/issues)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/adityad0/hacktag)
+![GitHub](https://img.shields.io/github/license/adityad0/hacktag?style=flat-square)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/adityad0/hacktag?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues-raw/adityad0/hacktag?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/adityad0/hacktag?style=flat-square)
