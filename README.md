@@ -1,26 +1,28 @@
-# hacktag
-A home made GPS tracker with live tracking using GSM, BLE and Wi-Fi
+# HackTag
+
+A home made GPS tracker with live tracking tracking updates using GPS and GSM connectivity.
+This project uses a SIM A7670C 4G/LTE Module, NEO 6M GPS Module and a SEEED XIAO SAMD 21 Microcontroller to fetch the current location using GPS and send out location updates over SMS at a fixed intervals or whenever the device moves a certain distance from it's last known position. Currently, it does not support UWB like the Apple Airtag or other devices. The device cannot send location updates without a 2G/4G mobile network.
 
 ## Components
-1. GPS Module - NEO 6M GPS Module from u-blox or another compatible type
-2. Microcontroller - Arduino, SEEED XIAO, ESP32, RP2040 or another compatible type
-3. GSM Module - SIM800L or another compatible type (Note: SIM800L supports only 2G networks)
-4. 8 Ohm Speaker or another compatible type (Optional)
-5. Electret microphone or another compatible type (Optional)
-6. Wires to connect everything up
-7. Li-ion Battery (3.7v) (Optional)
-8. LD33V linear voltage regulator (or another compatible type)
-9. Li-ion charge module
-10. SSD1306 (I2C) OLED Display (Optional) or another compatible type
+1. GPS Module - NEO 6M GPS Module from u-blox or another compatible type.
+2. Microcontroller - Arduino, SEEED XIAO ESP32, RP2040, nRF52840 or another compatible type.
+3. GSM Module - SIM800L, SIM A7670C another compatible type (Note: SIM800L supports only 2G networks whereas the A7670C supports both 4G/LTE and 2G GSM).
+4. Li-ion Battery (3.7v) (Optional).
+5. Li-ion charge module.
 
 
-**WARNING:** This project is for educational purposes only.
+## Future updates
+1. Currently there is no plan for UWB support. If you wish to implement something similar to this, I recommend taking a look at this repository. https://github.com/0015/ThatProject/tree/master/ESP32_UWB
+2. I'm currently working on a simple Android app using app inventor. When complete, I will release all the files here so all users can recreate the app for their own use. If you wish to use Wi-Fi or Bluetooth, I recommend that you use the SEEED XIAO nRF52840 or the ESP32. You can also use a module such as the HC-05 bluetooth module for app connectivity.
 
+
+**NOTE:** This project is for educational purposes only and is provided as-is without any warranty whatsoever. Please follow all local laws concerning such trackers before getting started. The creator of this project, the contributors, authors or anyone involved in the making of this project are not liable or responsible for any damages of any kind whatsoever.
+
+
+Full License: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 
 HackTag © 2023 by Aditya Desai is licensed under Attribution-ShareAlike 4.0 International
-
-Full License: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 ![GitHub](https://img.shields.io/github/license/adityad0/hacktag?style=flat-square)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/adityad0/hacktag?style=flat-square)
