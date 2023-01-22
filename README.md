@@ -13,6 +13,16 @@ The program uses the TinyGPS++ and SoftwareSerial library to fetch the location 
 4. Li-ion Battery (3.7v) (Optional).
 5. Li-ion charge module.
 
+## Getting started
+1. Download the hacktag folder and save it to a known location.
+2. Open the Arduino IDE and open this downloaded folder.
+3. Connect your Arduino/SEEED Xiao board to your computer.
+4. Select your board and port under the Tools option. (On Windows, use device manager to find the port)
+5. Click on upload.
+6. Make the connections as given in the program. Note that TX must be connected to RX and vice versa. In my case, the GSM module had incorrect labeling and I had to connect TX to TX and RX to RX. Please check this before making the connections.
+7. Reset your board and open Serial Monitor or Putty for the port with a baud rate of 9600.
+Done!
+
 
 ## Future updates
 1. Currently there is no plan for UWB support. If you wish to implement something similar to this, I recommend taking a look at this repository. https://github.com/0015/ThatProject/tree/master/ESP32_UWB
