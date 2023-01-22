@@ -3,6 +3,9 @@
 A home made GPS tracker with live tracking tracking updates using GPS and GSM connectivity.
 This project uses a SIM A7670C 4G/LTE Module, NEO 6M GPS Module and a SEEED XIAO SAMD 21 Microcontroller to fetch the current location using GPS and send out location updates over SMS at a fixed intervals or whenever the device moves a certain distance from it's last known position. Currently, it does not support UWB like the Apple Airtag or other devices. The device cannot send location updates without a 2G/4G mobile network.
 
+## What does the program do?
+The program uses the TinyGPS++ and SoftwareSerial library to fetch the location from the GPS module every 1 second. The location data is processed using the TinyGPS++ library. If the device is moving more that 10 meters/second, an SMS alert is sent to the predefined mobile number. However, no SMS alert is sent if the device is moving under 10 meters/second. This issue will be fixed in the next version where an additional alert will be sent if the device moves more than 10 meters from it's initial position. In addition to this, an SMS alert is also sent every hour containing the Latitude, Longitude, Altitude and the current Date and Time with a Google Maps link with a dropped pin at the coordinates.
+
 ## Components
 1. GPS Module - NEO 6M GPS Module from u-blox or another compatible type.
 2. Microcontroller - Arduino, SEEED XIAO ESP32, RP2040, nRF52840 or another compatible type.
